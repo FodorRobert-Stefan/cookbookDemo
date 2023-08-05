@@ -7,6 +7,7 @@ import Page2 from './pages/Page2';
 import Category from './pages/Category';
 import Header from './components/Header';
 import RecipeScreen from './pages/RecipeScreen';
+import SpecialCategoryScreen from './pages/SpecialCategoryScreen';
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
       <Route path='/recipes' Component={Page2} />
         <Route path='/category/:id' Component={Category} />
         <Route path='/recipesDetails/:id' Component={RecipeScreen} />
+        <Route path='/specialCategory/:id' Component={SpecialCategoryScreen} />
 
 
     </Routes>
